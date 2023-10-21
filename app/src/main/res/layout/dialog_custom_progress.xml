@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00FFFFFF"
+    >
+    <ProgressBar
+        android:id="@+id/pbPleaseWait"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:layout_marginEnd="@dimen/progress_bar_margin_end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/tvPleaseWait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_wait"
+        android:textColor="@color/black"
+        android:textSize="@dimen/progress_bar_text_size"
+        app:layout_constraintStart_toEndOf="@id/pbPleaseWait"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/pbPleaseWait"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
